@@ -57,6 +57,12 @@ const summedPrice = cart.reduce((acc, curr) => acc + curr.price, 0)
 //CODE HERE
 
 
+function calcFinalPrice (cartTotal, couponValue, tax) {
+    return (cartTotal * tax) - couponValue
+}
+// console.log(calcFinalPrice(26.97,2,1.06))
+
+
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -80,6 +86,11 @@ const summedPrice = cart.reduce((acc, curr) => acc + curr.price, 0)
 
 /*
     TEXT ANSWER HERE
+    When creating my customer object I thought about all the things a 
+    restaurant would need to get you your food ex: Name, adress, phoneNumber.
+    I also included age, email I figured it would help with delivery and 
+    be good to have records of customers. Might help with news letters and 
+    knowing the deographic of customers. 
 
 */
 
@@ -89,3 +100,11 @@ const summedPrice = cart.reduce((acc, curr) => acc + curr.price, 0)
 */
 
 //CODE HERE
+let customer = {
+    name: "Scott",
+    age: 33,
+    email: "ad;sflkj@yahoo.com",
+    address: "123 happy lane",
+    phoneNumber: 312_123_1232,
+
+}
