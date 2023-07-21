@@ -55,17 +55,19 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
-let canWeDeliver = zipCode => {
-    if (zipCode === deliveryAreaZipCodes) {
-        return true
-    } else {
-        return false
+function canWeDeliver(zipCode) {
+    for(let i = 0; i < deliveryAreaZipCodes.length; i++) {
+        if(deliveryAreaZipCodes[i] === zipCode) {
+            return "You're in our delivery zone"
+        }
     }
+    return "Sorry, we can't deliver to that address"
 }
-
-console.log(canWeDeliver(85205))
+  
 
 // console.log(canWeDeliver(85213))
+
+
 /* 
     Problem 2 Continued
 
@@ -85,13 +87,13 @@ console.log(canWeDeliver(85205))
 
 // CODE HERE
 
-// let canWeDeliverTwo = (zipCode) => {
-//     if (deliveryAreaZipCodes.includes(zipCode)) {
-//         return "You're in our dillivery zone!"
-//     } else {
-//         return "Sorry, we can't deliver to that address"
-//     }
-// }
+let canWeDeliverTwo = (zipCode) => {
+    if (deliveryAreaZipCodes.includes(zipCode)) {
+        return "You're in our dillivery zone!"
+    } else {
+        return "Sorry, we can't deliver to that address"
+    }
+}
 // console.log(canWeDeliverTwo(89178))
 
 //////////////////PROBLEM 3////////////////////
@@ -129,9 +131,6 @@ const deals = [
 
 //CODE HERE
 
-deals.replace()
-
-
 
 /*
     The restaurant is going to continue its
@@ -147,3 +146,4 @@ deals.replace()
 */
 
 //CODE HERE
+
