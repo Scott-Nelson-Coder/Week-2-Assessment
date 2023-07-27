@@ -54,7 +54,7 @@ const pizza = {
 
 //CODE HERE
 
-// console.log(pizza.popularity)
+console.log(pizza.popularity)
 
 
 /*
@@ -66,7 +66,10 @@ const pizza = {
 
 //CODE HERE
 
-// console.log(pizza.tags)
+//Thanks for pointing that out. I didn't read it careful enough!
+
+console.log(pizza.tags[1])
+
 
 
 /*
@@ -79,7 +82,7 @@ const pizza = {
 //CODE HERE
 
 let {price} = pizza
-// console.log(`${price} is not to expensive`)
+console.log(`${price} is not to expensive`)
 
 
 /*
@@ -92,7 +95,7 @@ let {price} = pizza
 //CODE HERE
 
 let {category} = pizza
-// console.log(`${category}`)
+console.log(`${category}`)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -219,11 +222,6 @@ const filteredFood = foodArr.filter((ele) => ele.tags.includes("deal of day"))
 */
 
 //CODE HERE
-let filterByProperty = (property, number, type) => {
-    let newArr = []
-    
-
-}
 
 
 /*
@@ -233,4 +231,7 @@ let filterByProperty = (property, number, type) => {
     You'll have to console.log to see the filtered array
 */
 
-//CODE HERE
+//CODE HERE 
+
+
+// console.log(filterByProperty())
