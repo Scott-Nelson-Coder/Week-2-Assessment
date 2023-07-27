@@ -66,7 +66,7 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
-//Thanks for pointing that out. I didn't read it careful enough!
+//Thanks for pointing that out. I didn't read it carefully enough!
 
 console.log(pizza.tags[1])
 
